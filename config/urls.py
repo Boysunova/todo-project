@@ -17,6 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from django.contrib import admin
+from django.urls import path
+from todo.views import task_create
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('task_create/',task_create),
 ]
